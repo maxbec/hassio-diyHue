@@ -3,16 +3,13 @@
 CONFIG_PATH=/data/options.json
 
 export MAC="$(bashio::config 'mac')"
-export CONFIG_PATH="$(bashio::config 'config_path')"
 export DEBUG="$(bashio::config 'debug')"
 
 if [[ ! -z "$(bashio::config 'deconz_ip')" ]]; then
     export DECONZ="$(bashio::config 'deconz_ip')"
 fi
 
-if [[ ! -z "$(bashio::config 'no-serve-https')" ]]; then
-    export NO_SERVE_HTTPS="$(bashio::config 'no-serve-https')"
-fi
+export NO_SERVE_HTTPS="$(bashio::config 'no_serve_https')"
 
 CONFIG_PATH=/data/config/diyhue
 
