@@ -12,6 +12,8 @@ fi
 
 if [[ ! -z "$(bashio::config 'no-serve-https')" ]]; then
     export NO_SERVE_HTTPS="$(bashio::config 'no-serve-https')"
+else
+    export NO_SERVE_HTTPS="false"
 fi
 
 CONFIG_PATH=/data/config/diyhue
@@ -23,10 +25,13 @@ else
     echo "$CONFIG_PATH created."
 fi
 
+
 echo "Your Architecture is $BUILD_ARCHI"
 
 if [ "$NO_SERVE_HTTPS" = "true" ] ; then
+    echo "No serve HTTPS"
     python3 -u /opt/hue-emulator/HueEmulator3.py --docker --no-serve-https
 else 
+    echo "Serve HTTPS"
     python3 -u /opt/hue-emulator/HueEmulator3.py --docker
 fi
