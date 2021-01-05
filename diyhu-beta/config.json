@@ -29,16 +29,15 @@
 	"auto_uart": true,
 	"map": ["config:rw", "share:rw"],
 	"options": {
-		"config_path": "/config/diyhue",
 		"mac": "XX:XX:XX:XX:XX",
 		"debug": false,
 		"deconz_ip": "",
-		"no_serve_https": "false"
+		"no_serve_https": false
 	},
 	"schema": {
-		"config_path": "str",
 		"mac": "str",
 		"debug": "bool",
-		"deconz_ip": "str"
+		"deconz_ip": "str",
+		"no_serve_https": "bool"		
 	}
 }
