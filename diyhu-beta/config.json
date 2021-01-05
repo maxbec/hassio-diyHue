@@ -32,7 +32,8 @@
 		"config_path": "/config/diyhue",
 		"mac": "XX:XX:XX:XX:XX",
 		"debug": false,
-		"deconz_ip": ""
+		"deconz_ip": "",
+		"disable_https": "false"
 	},
 	"schema": {
 		"config_path": "str",
