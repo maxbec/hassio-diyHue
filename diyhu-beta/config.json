@@ -33,7 +33,7 @@
 		"mac": "XX:XX:XX:XX:XX",
 		"debug": false,
 		"deconz_ip": "",
-		"disable_https": "false"
+		"no_serve_https": "false"
 	},
 	"schema": {
 		"config_path": "str",
