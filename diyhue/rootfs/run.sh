@@ -10,11 +10,7 @@ if [[ ! -z "$(bashio::config 'deconz_ip')" ]]; then
     export DECONZ="$(bashio::config 'deconz_ip')"
 fi
 
-if [[ ! -z "$(bashio::config 'no-serve-https')" ]]; then
-    export NO_SERVE_HTTPS="$(bashio::config 'no-serve-https')"
-else
-    export NO_SERVE_HTTPS="false"
-fi
+export NO_SERVE_HTTPS="$(bashio::config 'no-serve-https')"
 
 CONFIG_PATH=/data/config/diyhue
 
