@@ -14,6 +14,8 @@ if [[ ! -z "$(bashio::config 'no-serve-https')" ]]; then
     export NO_SERVE_HTTPS="$(bashio::config 'no-serve-https')"
 fi
 
+CONFIG_PATH=/data/config/diyhue
+
 if [[ -d $CONFIG_PATH ]]; then
     echo "$CONFIG_PATH exists."
 else
