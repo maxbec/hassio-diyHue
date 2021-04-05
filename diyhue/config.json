@@ -38,4 +38,5 @@
         "deconz_ip": "str",
         "no_serve_https": "bool"
     }
+    "host_network": true
 }
