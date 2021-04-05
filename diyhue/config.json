@@ -22,6 +22,7 @@
     },
     "auth_api": true,
     "hassio_api": true,
+    "host_network": true,
     "uart": true,
     "map": ["config:rw", "share:rw"],
     "options": {
@@ -38,5 +39,4 @@
         "deconz_ip": "str",
         "no_serve_https": "bool"
     }
-    "host_network": true
 }
