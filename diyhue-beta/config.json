@@ -22,6 +22,7 @@
 	},
 	"auth_api": true,
 	"hassio_api": true,
+	"host_network": true,
 	"uart": true,
 	"map": ["config:rw", "share:rw"],
 	"options": {
