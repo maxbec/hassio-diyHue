@@ -1,0 +1,208 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/jan/Downloads/hassio-diyHue/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+0	diyhue-beta/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	s	array:arch
+0	diyhue-beta/config.json	/^"map": ["config:rw", "share:rw"],$/;"	s	array:map
+0	diyhue/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	s	array:arch
+0	diyhue/config.json	/^"map": ["config:rw", "share:rw"],$/;"	s	array:map
+1	diyhue-beta/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	s	array:arch
+1	diyhue-beta/config.json	/^"map": ["config:rw", "share:rw"],$/;"	s	array:map
+1	diyhue/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	s	array:arch
+1	diyhue/config.json	/^"map": ["config:rw", "share:rw"],$/;"	s	array:map
+1900/udp	diyhue-beta/config.json	/^    "1900\/udp": "ssdp discover",$/;"	s	object:ports_description
+1900/udp	diyhue-beta/config.json	/^    "1900\/udp": 1901,$/;"	n	object:ports
+1900/udp	diyhue/config.json	/^    "1900\/udp": "ssdp discover",$/;"	s	object:ports_description
+1900/udp	diyhue/config.json	/^    "1900\/udp": 1901,$/;"	n	object:ports
+1982/udp	diyhue-beta/config.json	/^    "1982\/udp": "Yeelight detection",$/;"	s	object:ports_description
+1982/udp	diyhue-beta/config.json	/^    "1982\/udp": 1982,$/;"	n	object:ports
+1982/udp	diyhue/config.json	/^    "1982\/udp": "Yeelight detection",$/;"	s	object:ports_description
+1982/udp	diyhue/config.json	/^    "1982\/udp": 1982,$/;"	n	object:ports
+2	diyhue-beta/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	s	array:arch
+2	diyhue/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	s	array:arch
+2100/udp	diyhue-beta/config.json	/^    "2100\/udp": "Hue Entertainment"$/;"	s	object:ports_description
+2100/udp	diyhue-beta/config.json	/^    "2100\/udp": 2100$/;"	n	object:ports
+2100/udp	diyhue/config.json	/^    "2100\/udp": "Hue Entertainment"$/;"	s	object:ports_description
+2100/udp	diyhue/config.json	/^    "2100\/udp": 2100$/;"	n	object:ports
+3	diyhue-beta/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	s	array:arch
+3	diyhue/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	s	array:arch
+4	diyhue-beta/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	s	array:arch
+4	diyhue/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	s	array:arch
+443/tcp	diyhue-beta/config.json	/^    "443\/tcp": "Hue API SSL",$/;"	s	object:ports_description
+443/tcp	diyhue-beta/config.json	/^    "443\/tcp": 443,$/;"	n	object:ports
+443/tcp	diyhue/config.json	/^    "443\/tcp": "Hue API SSL",$/;"	s	object:ports_description
+443/tcp	diyhue/config.json	/^    "443\/tcp": 443,$/;"	n	object:ports
+80/tcp	diyhue-beta/config.json	/^    "80\/tcp": "Hue API",$/;"	s	object:ports_description
+80/tcp	diyhue-beta/config.json	/^    "80\/tcp": 80,$/;"	n	object:ports
+80/tcp	diyhue/config.json	/^    "80\/tcp": "Hue API",$/;"	s	object:ports_description
+80/tcp	diyhue/config.json	/^    "80\/tcp": 80,$/;"	n	object:ports
+About	README.md	/^## About$/;"	s
+About	diyhue-beta/README.md	/^## About$/;"	s	chapter:Home Assistant Add-on: diyHue
+About	diyhue/README.md	/^## About$/;"	s	chapter:Home Assistant Add-on: diyHue
+Added	diyhue-beta/CHANGELOG.md	/^### Added$/;"	S	section:Changelog""[1.1.0] - 26.12.2020
+Added	diyhue-beta/CHANGELOG.md	/^### Added$/;"	S	section:Changelog""[1.3.1 - 18.01.2021]
+Added	diyhue-beta/CHANGELOG.md	/^### Added$/;"	S	section:Changelog""[1.4.0 - 25.3.2021]
+Added	diyhue/CHANGELOG.md	/^### Added$/;"	S	section:Changelog""[1.1.0] - 26.12.2020
+Added	diyhue/CHANGELOG.md	/^### Added$/;"	S	section:Changelog""[1.3.1 - 18.01.2021]
+Added	diyhue/CHANGELOG.md	/^### Added$/;"	S	section:Changelog""[1.4.0 - 25.3.2021]
+Additional Projects and Ideas	README.md	/^## Additional Projects and Ideas$/;"	s
+Apache 2.0 License Text	diyhue-beta/LICENSE.md	/^## Apache 2.0 License Text$/;"	s	chapter:Project Licenses
+Apache 2.0 License Text	diyhue/LICENSE.md	/^## Apache 2.0 License Text$/;"	s	chapter:Project Licenses
+Authors & contributors	diyhue-beta/DOCS.md	/^## Authors & contributors$/;"	s	chapter:Home Assistant Add-on: diyHue
+Authors & contributors	diyhue/DOCS.md	/^## Authors & contributors$/;"	s	chapter:Home Assistant Add-on: diyHue
+Changed	diyhue-beta/CHANGELOG.md	/^### Changed$/;"	S	section:Changelog""[1.4.1 - 05.04.2021]
+Changed	diyhue/CHANGELOG.md	/^### Changed$/;"	S	section:Changelog""[1.4.1 - 05.04.2021]
+Changelog	README.md	/^## Changelog$/;"	s
+Changelog	diyhue-beta/CHANGELOG.md	/^# Changelog$/;"	c
+Changelog	diyhue/CHANGELOG.md	/^# Changelog$/;"	c
+Changelog & Releases	diyhue-beta/DOCS.md	/^## Changelog & Releases$/;"	s	chapter:Home Assistant Add-on: diyHue
+Changelog & Releases	diyhue/DOCS.md	/^## Changelog & Releases$/;"	s	chapter:Home Assistant Add-on: diyHue
+Configuration	diyhue-beta/DOCS.md	/^## Configuration$/;"	s	chapter:Home Assistant Add-on: diyHue
+Configuration	diyhue/DOCS.md	/^## Configuration$/;"	s	chapter:Home Assistant Add-on: diyHue
+Contribute	README.md	/^## Contribute$/;"	s
+Credits	README.md	/^## Credits$/;"	s
+Credits	diyhue-beta/README.md	/^## Credits$/;"	s	chapter:Home Assistant Add-on: diyHue
+Credits	diyhue/README.md	/^## Credits$/;"	s	chapter:Home Assistant Add-on: diyHue
+Discourse [![Discourse](https://img.shields.io/discourse/users?server=https%3A%2F%2Fdiyhue.discourse.group)](https://diyhue.discourse.group)	README.md	/^### Discourse [![Discourse](https:\/\/img.shields.io\/discourse\/users?server=https%3A%2F%2Fdiyh/;"	S	section:Support
+Ebene_1	images/diyHue-logo-dev.svg	/^<svg id="Ebene_1" data-name="Ebene 1" xmlns="http:\/\/www.w3.org\/2000\/svg" viewBox="0 0 496.65/;"	i
+Fixed	diyhue-beta/CHANGELOG.md	/^### Fixed$/;"	S	section:Changelog""[1.1.0] - 26.12.2020
+Fixed	diyhue-beta/CHANGELOG.md	/^### Fixed$/;"	S	section:Changelog""[1.2.0 - 30.12.2020
+Fixed	diyhue-beta/CHANGELOG.md	/^### Fixed$/;"	S	section:Changelog""[1.3.1 - 18.01.2021]
+Fixed	diyhue-beta/CHANGELOG.md	/^### Fixed$/;"	S	section:Changelog""[1.3.2 - 8.02.2021]
+Fixed	diyhue-beta/CHANGELOG.md	/^### Fixed$/;"	S	section:Changelog""[1.4.1 - 05.04.2021]
+Fixed	diyhue/CHANGELOG.md	/^### Fixed$/;"	S	section:Changelog""[1.1.0] - 26.12.2020
+Fixed	diyhue/CHANGELOG.md	/^### Fixed$/;"	S	section:Changelog""[1.2.0 - 30.12.2020
+Fixed	diyhue/CHANGELOG.md	/^### Fixed$/;"	S	section:Changelog""[1.3.1 - 18.01.2021]
+Fixed	diyhue/CHANGELOG.md	/^### Fixed$/;"	S	section:Changelog""[1.3.2 - 8.02.2021]
+Getting Started	diyhue-beta/README.md	/^## Getting Started$/;"	s	chapter:Home Assistant Add-on: diyHue
+Getting Started	diyhue/README.md	/^## Getting Started$/;"	s	chapter:Home Assistant Add-on: diyHue
+Home Assistant Add-on: diyHue	diyhue-beta/DOCS.md	/^# Home Assistant Add-on: diyHue$/;"	c
+Home Assistant Add-on: diyHue	diyhue-beta/README.md	/^# Home Assistant Add-on: diyHue$/;"	c
+Home Assistant Add-on: diyHue	diyhue/DOCS.md	/^# Home Assistant Add-on: diyHue$/;"	c
+Home Assistant Add-on: diyHue	diyhue/README.md	/^# Home Assistant Add-on: diyHue$/;"	c
+Installation	README.md	/^## Installation$/;"	s
+Installation	diyhue-beta/DOCS.md	/^## Installation$/;"	s	chapter:Home Assistant Add-on: diyHue
+Installation	diyhue/DOCS.md	/^## Installation$/;"	s	chapter:Home Assistant Add-on: diyHue
+Issues	README.md	/^## Issues$/;"	s
+Known issues and limitations	diyhue-beta/DOCS.md	/^## Known issues and limitations$/;"	s	chapter:Home Assistant Add-on: diyHue
+Known issues and limitations	diyhue/DOCS.md	/^## Known issues and limitations$/;"	s	chapter:Home Assistant Add-on: diyHue
+License	README.md	/^## License$/;"	s
+Option: `config_path`	diyhue-beta/DOCS.md	/^### Option: `config_path`$/;"	S	section:Home Assistant Add-on: diyHue""Configuration
+Option: `config_path`	diyhue/DOCS.md	/^### Option: `config_path`$/;"	S	section:Home Assistant Add-on: diyHue""Configuration
+Option: `debug`	diyhue-beta/DOCS.md	/^### Option: `debug`$/;"	S	section:Home Assistant Add-on: diyHue""Configuration
+Option: `debug`	diyhue/DOCS.md	/^### Option: `debug`$/;"	S	section:Home Assistant Add-on: diyHue""Configuration
+Option: `deconz_ip`	diyhue-beta/DOCS.md	/^### Option: `deconz_ip`$/;"	S	section:Home Assistant Add-on: diyHue""Configuration
+Option: `deconz_ip`	diyhue/DOCS.md	/^### Option: `deconz_ip`$/;"	S	section:Home Assistant Add-on: diyHue""Configuration
+Option: `mac`	diyhue-beta/DOCS.md	/^### Option: `mac`$/;"	S	section:Home Assistant Add-on: diyHue""Configuration
+Option: `mac`	diyhue/DOCS.md	/^### Option: `mac`$/;"	S	section:Home Assistant Add-on: diyHue""Configuration
+Option: `no-serve-https`	diyhue-beta/DOCS.md	/^### Option: `no-serve-https`$/;"	S	section:Home Assistant Add-on: diyHue""Configuration
+Option: `no-serve-https`	diyhue/DOCS.md	/^### Option: `no-serve-https`$/;"	S	section:Home Assistant Add-on: diyHue""Configuration
+Page-1	images/logo-small.svg	/^    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">$/;"	i
+Project Licenses	diyhue-beta/LICENSE.md	/^# Project Licenses$/;"	c
+Project Licenses	diyhue/LICENSE.md	/^# Project Licenses$/;"	c
+Rectangle-2	images/logo-small.svg	/^                    <rect id="Rectangle-2" x="0" y="0" width="396" height="350"><\/rect>$/;"	i
+Rectangle-2	images/logo-small.svg	/^                <rect id="Rectangle-2" x="0" y="0" width="500" height="500"><\/rect>$/;"	i
+Slack [![JoinSlack](https://img.shields.io/badge/Join%20us-on%20Slack-green.svg)](https://join.slack.com/t/diyhue/shared_invite/enQtNzAwNDE1NDY2MzQxLTljNGMwZmE0OWRhNDIwM2FjOGM1ZTcxNjNmYjc5ZmE3MjZlNmNjMmUzYmRkZjhhOGNjOTc4NzA0MGVkYzE2NWM) [![SlackStatus](https://slackinvite.squishedmooo.com/badge.svg?colorB=8ebc06)](https://slackinvite.squishedmooo.com/)	README.md	/^### Slack [![JoinSlack](https:\/\/img.shields.io\/badge\/Join%20us-on%20Slack-green.svg)](https:/;"	S	section:Support
+Stability	README.md	/^## Stability$/;"	s
+Support	README.md	/^## Support$/;"	s
+Support	diyhue-beta/DOCS.md	/^## Support$/;"	s	chapter:Home Assistant Add-on: diyHue
+Support	diyhue/DOCS.md	/^## Support$/;"	s	chapter:Home Assistant Add-on: diyHue
+[1.1.0] - 26.12.2020	diyhue-beta/CHANGELOG.md	/^## [1.1.0] - 26.12.2020$/;"	s	chapter:Changelog
+[1.1.0] - 26.12.2020	diyhue/CHANGELOG.md	/^## [1.1.0] - 26.12.2020$/;"	s	chapter:Changelog
+[1.2.0 - 30.12.2020	diyhue-beta/CHANGELOG.md	/^## [1.2.0 - 30.12.2020$/;"	s	chapter:Changelog
+[1.2.0 - 30.12.2020	diyhue/CHANGELOG.md	/^## [1.2.0 - 30.12.2020$/;"	s	chapter:Changelog
+[1.3.1 - 18.01.2021]	diyhue-beta/CHANGELOG.md	/^## [1.3.1 - 18.01.2021]$/;"	s	chapter:Changelog
+[1.3.1 - 18.01.2021]	diyhue/CHANGELOG.md	/^## [1.3.1 - 18.01.2021]$/;"	s	chapter:Changelog
+[1.3.2 - 8.02.2021]	diyhue-beta/CHANGELOG.md	/^## [1.3.2 - 8.02.2021]$/;"	s	chapter:Changelog
+[1.3.2 - 8.02.2021]	diyhue/CHANGELOG.md	/^## [1.3.2 - 8.02.2021]$/;"	s	chapter:Changelog
+[1.4.0 - 25.3.2021]	diyhue-beta/CHANGELOG.md	/^## [1.4.0 - 25.3.2021]$/;"	s	chapter:Changelog
+[1.4.0 - 25.3.2021]	diyhue/CHANGELOG.md	/^## [1.4.0 - 25.3.2021]$/;"	s	chapter:Changelog
+[1.4.1 - 05.04.2021]	diyhue-beta/CHANGELOG.md	/^## [1.4.1 - 05.04.2021]$/;"	s	chapter:Changelog
+[1.4.1 - 05.04.2021]	diyhue/CHANGELOG.md	/^## [1.4.1 - 05.04.2021]$/;"	s	chapter:Changelog
+aarch64	diyhue-beta/build.json	/^    "aarch64": "hassioaddons\/base-python-aarch64:5.3.4",$/;"	s	object:build_from
+aarch64	diyhue/build.json	/^    "aarch64": "hassioaddons\/base-python-aarch64:5.3.4",$/;"	s	object:build_from
+amd64	diyhue-beta/build.json	/^    "amd64": "hassioaddons\/base-python-amd64:5.3.4",$/;"	s	object:build_from
+amd64	diyhue/build.json	/^    "amd64": "hassioaddons\/base-python-amd64:5.3.4",$/;"	s	object:build_from
+arch	diyhue-beta/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	a
+arch	diyhue/config.json	/^"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],$/;"	a
+args	diyhue-beta/build.json	/^"args": {$/;"	o
+args	diyhue/build.json	/^"args": {$/;"	o
+armv7	diyhue-beta/build.json	/^    "armv7": "hassioaddons\/base-python-armv7:5.3.4",$/;"	s	object:build_from
+armv7	diyhue/build.json	/^    "armv7": "hassioaddons\/base-python-armv7:5.3.4",$/;"	s	object:build_from
+auth_api	diyhue-beta/config.json	/^"auth_api": true,$/;"	b
+auth_api	diyhue/config.json	/^"auth_api": true,$/;"	b
+build_from	diyhue-beta/build.json	/^"build_from": {$/;"	o
+build_from	diyhue/build.json	/^"build_from": {$/;"	o
+config_path	diyhue-beta/config.json	/^    "config_path": "\/config\/diyhue",$/;"	s	object:options
+config_path	diyhue-beta/config.json	/^    "config_path": "str",$/;"	s	object:schema
+config_path	diyhue/config.json	/^    "config_path": "\/config\/diyhue",$/;"	s	object:options
+config_path	diyhue/config.json	/^    "config_path": "str",$/;"	s	object:schema
+debug	diyhue-beta/config.json	/^    "debug": "bool",$/;"	s	object:schema
+debug	diyhue-beta/config.json	/^    "debug": false,$/;"	b	object:options
+debug	diyhue/config.json	/^    "debug": "bool",$/;"	s	object:schema
+debug	diyhue/config.json	/^    "debug": false,$/;"	b	object:options
+deconz_ip	diyhue-beta/config.json	/^    "deconz_ip": "",$/;"	s	object:options
+deconz_ip	diyhue-beta/config.json	/^    "deconz_ip": "str",$/;"	s	object:schema
+deconz_ip	diyhue/config.json	/^    "deconz_ip": "",$/;"	s	object:options
+deconz_ip	diyhue/config.json	/^    "deconz_ip": "str",$/;"	s	object:schema
+description	diyhue-beta/config.json	/^"description": "Philips Hue Bridge Emulator BETA",$/;"	s
+description	diyhue/config.json	/^"description": "Philips Hue Bridge Emulator",$/;"	s
+fill/blue	images/logo-small.svg	/^            <g id="fill\/blue" fill="#41BDF5">$/;"	i
+fill/white	images/logo-small.svg	/^                <g id="fill\/white" mask="url(#mask-2)" fill-rule="evenodd" fill="#FFFFFF">$/;"	i
+hassio_api	diyhue-beta/config.json	/^"hassio_api": true,$/;"	b
+hassio_api	diyhue/config.json	/^"hassio_api": true,$/;"	b
+host_network	diyhue-beta/config.json	/^"host_network": true,$/;"	b
+host_network	diyhue/config.json	/^"host_network": true,$/;"	b
+house-small-tree	images/logo-small.svg	/^                <g id="house-small-tree" fill-rule="nonzero"><\/g>$/;"	i
+house-with-small-tree	images/logo-small.svg	/^            <g id="house-with-small-tree" transform="translate(52.000000, 70.000000)">$/;"	i
+i386	diyhue-beta/build.json	/^    "i386": "hassioaddons\/base-python-i386:5.3.4"$/;"	s	object:build_from
+i386	diyhue/build.json	/^    "i386": "hassioaddons\/base-python-i386:5.3.4"$/;"	s	object:build_from
+logo-small	images/logo-small.svg	/^        <g id="logo-small">$/;"	i
+mac	diyhue-beta/config.json	/^    "mac": "XX:XX:XX:XX:XX:XX",$/;"	s	object:options
+mac	diyhue-beta/config.json	/^    "mac": "str",$/;"	s	object:schema
+mac	diyhue/config.json	/^    "mac": "XX:XX:XX:XX:XX:XX",$/;"	s	object:options
+mac	diyhue/config.json	/^    "mac": "str",$/;"	s	object:schema
+maintainer	repository.json	/^	"maintainer": "Max Beckenbauer <max.bec92@gmail.com>"$/;"	s
+map	diyhue-beta/config.json	/^"map": ["config:rw", "share:rw"],$/;"	a
+map	diyhue/config.json	/^"map": ["config:rw", "share:rw"],$/;"	a
+mask-2	images/logo-small.svg	/^                <mask id="mask-2" fill="white">$/;"	i
+name	diyhue-beta/config.json	/^"name": "diyHue Beta",$/;"	s
+name	diyhue/config.json	/^"name": "diyHue",$/;"	s
+name	repository.json	/^	"name": "MaxBec Home Assistant Add-on diyHue",$/;"	s
+network	diyhue-beta/build.json	/^    "network": "host"$/;"	s	object:args
+network	diyhue/build.json	/^    "network": "host"$/;"	s	object:args
+no_serve_https	diyhue-beta/config.json	/^    "no_serve_https": "bool"$/;"	s	object:schema
+no_serve_https	diyhue-beta/config.json	/^    "no_serve_https": false$/;"	b	object:options
+no_serve_https	diyhue/config.json	/^    "no_serve_https": "bool"$/;"	s	object:schema
+no_serve_https	diyhue/config.json	/^    "no_serve_https": false$/;"	b	object:options
+ns7cca2aff0101	images/logo-small.svg	/^<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http:\/\/www.w3.org/;"	n	uri:http://www.w3.org/2000/svg
+nsb359097a0101	images/diyHue-logo-dev.svg	/^<svg id="Ebene_1" data-name="Ebene 1" xmlns="http:\/\/www.w3.org\/2000\/svg" viewBox="0 0 496.65/;"	n	uri:http://www.w3.org/2000/svg
+options	diyhue-beta/config.json	/^"options": {$/;"	o
+options	diyhue/config.json	/^"options": {$/;"	o
+panel_icon	diyhue-beta/config.json	/^"panel_icon": "mdi:home-lightbulb",$/;"	s
+panel_icon	diyhue/config.json	/^"panel_icon": "mdi:home-lightbulb",$/;"	s
+path-1	images/logo-small.svg	/^        <path d="M44.0416131,342.222285 L44.0416131,208.983005 L9.33325709,208.983005 C4.1786411/;"	d
+path-1	images/logo-small.svg	/^        <path d="M44.0416131,342.222285 L44.0416131,208.983005 L9.33325709,208.983005 C4.1786411/;"	i
+ports	diyhue-beta/config.json	/^"ports": {$/;"	o
+ports	diyhue/config.json	/^"ports": {$/;"	o
+ports_description	diyhue-beta/config.json	/^"ports_description": {$/;"	o
+ports_description	diyhue/config.json	/^"ports_description": {$/;"	o
+schema	diyhue-beta/config.json	/^"schema": {$/;"	o
+schema	diyhue/config.json	/^"schema": {$/;"	o
+slug	diyhue-beta/config.json	/^"slug": "diyhue-beta-branch",$/;"	s
+slug	diyhue/config.json	/^"slug": "diyhue-beta",$/;"	s
+uart	diyhue-beta/config.json	/^"uart": true,$/;"	b
+uart	diyhue/config.json	/^"uart": true,$/;"	b
+url	repository.json	/^	"url": "https:\/\/github.com\/MaxBec\/hassio-diyHue",$/;"	s
+version	diyhue-beta/config.json	/^"version": "1.5.0",$/;"	s
+version	diyhue/config.json	/^"version": "1.5.0",$/;"	s
+webui	diyhue-beta/config.json	/^"webui": "http:\/\/[HOST]:[PORT:80]",$/;"	s
+webui	diyhue/config.json	/^"webui": "http:\/\/[HOST]:[PORT:80]",$/;"	s
+xlink	images/logo-small.svg	/^<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http:\/\/www.w3.org/;"	n	uri:http://www.w3.org/1999/xlink
