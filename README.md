@@ -10,3 +10,5 @@
 diyHue is now officially supporting the Homeassistant Addon i created. You can now follow the offical Repo at
 
 https://github.com/diyhue/hassio-addon
+
+<br>
