@@ -5,9 +5,9 @@
 <p>Run <a href="https://diyhue.org">diyHue</a> as a Home Assistant Add-on</p>
 </div>
 
-## About
+## MOVED
 
-diyHue is now officially supporting the Homeassistant Addon i created. You can now follow the offical Repo at
+diyHue is now officially supporting the Homeassistant addon i created. You can now follow the offical Repo at
 
 https://github.com/diyhue/hassio-addon
 
