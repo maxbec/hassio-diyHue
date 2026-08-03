@@ -1,0 +1,22 @@
+{
+  "buildable": [
+    "python3",
+    "scripts/addon-check.py"
+  ],
+  "affected": [
+    "python3",
+    "scripts/addon-check.py"
+  ],
+  "full": [
+    "python3",
+    "scripts/addon-check.py"
+  ],
+  "smoke": [
+    "python3",
+    "scripts/addon-check.py"
+  ],
+  "health": [
+    "python3",
+    "scripts/addon-check.py"
+  ]
+}

@@ -1,0 +1,8 @@
+# Only the production deployment manifest claims review here.
+#
+# Branch protection requires code-owner review, and the code owner is the
+# same account that opens every migration pull request, so listing the
+# generated files made the platform unable to update its own consumers.
+# Those files are validated against the pinned platform by the Policy Gate
+# on every pull request, which is a stronger guarantee than a review.
+/.deploy/production.yaml @maxbec

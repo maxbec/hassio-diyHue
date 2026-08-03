@@ -1,0 +1,12 @@
+
+# flama-delivery:start
+# Flama delivery platform: generated and drift-protected.
+.flama/
+.paperclip/
+.github/workflows/flama-*.yml
+.github/dependabot.yml
+.github/CODEOWNERS
+.release-please-config.json
+.release-please-manifest.json
+scripts/delivery
+# flama-delivery:end

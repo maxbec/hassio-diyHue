@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "repository": {
+    "owner": "maxbec",
+    "name": "hassio-diyHue",
+    "visibility": "public"
+  },
+  "paperclip": {
+    "company": "Private",
+    "projectId": "79f28601-5a81-4a68-a77e-fac4105b30fb",
+    "workspaceId": "92e8164e-47a4-4f19-9a7a-875c0d269e8c"
+  },
+  "profile": "fast",
+  "branches": {
+    "default": "main",
+    "stable": "main",
+    "featureTarget": "main"
+  },
+  "commands": {
+    "buildable": "./scripts/delivery buildable",
+    "affected": "./scripts/delivery affected",
+    "full": "./scripts/delivery full",
+    "smoke": "./scripts/delivery smoke",
+    "health": "./scripts/delivery health"
+  },
+  "changeDetection": {
+    "failClosed": true,
+    "broadenOn": [
+      "lockfiles",
+      "authentication",
+      "database_schema",
+      "uncertain_detection"
+    ]
+  },
+  "release": {
+    "enabled": false,
+    "strategy": "release-please",
+    "impactSource": "paperclip_task",
+    "type": "simple"
+  },
+  "deployment": {
+    "deployable": false,
+    "provider": "none",
+    "manifestPath": ".deploy/production.yaml"
+  },
+  "secrets": {
+    "source": "infisical",
+    "paths": {
+      "development": "/development"
+    },
+    "exceptionsFile": ".flama/secret-exceptions.json",
+    "projectSlug": "hassio-diyHue"
+  },
+  "platform": {
+    "repository": "maxbec/flama-delivery-platform",
+    "version": "0.1.0"
+  }
+}

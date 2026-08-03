@@ -1,0 +1,15 @@
+name: Flama Branch Guard
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  branch-guard:
+    uses: maxbec/flama-delivery-platform/.github/workflows/reusable-branch-guard.yml@80e829ad0ccddf87898988711ff92cd810b62c13
+    with:
+      head-sha: ${{ github.event.pull_request.head.sha }}
+      profile: fast

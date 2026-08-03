@@ -1,0 +1,28 @@
+name: Flama Production Deploy
+
+on:
+  pull_request:
+    branches: [main]
+    paths: [.deploy/production.yaml]
+    types: [closed]
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    if: ${{ github.event.pull_request.merged == true }}
+    permissions:
+      contents: read
+      pull-requests: read
+      deployments: write
+      id-token: write
+      attestations: read
+    uses: maxbec/flama-delivery-platform/.github/workflows/reusable-deploy.yml@80e829ad0ccddf87898988711ff92cd810b62c13
+    with:
+      platform-sha: 80e829ad0ccddf87898988711ff92cd810b62c13
+      pull-request-number: ${{ github.event.pull_request.number }}
+      approved-head-sha: ${{ github.event.pull_request.head.sha }}
+      merge-sha: ${{ github.event.pull_request.merge_commit_sha }}
+      manifest-path: .deploy/production.yaml
+      adapter-path: .flama/provider.cjs
