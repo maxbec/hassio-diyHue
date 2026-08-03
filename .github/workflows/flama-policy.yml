@@ -1,0 +1,19 @@
+name: Flama Policy
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  checks: read
+  contents: read
+
+jobs:
+  policy:
+    uses: maxbec/flama-delivery-platform/.github/workflows/reusable-policy.yml@80e829ad0ccddf87898988711ff92cd810b62c13
+    with:
+      base-sha: ${{ github.event.pull_request.base.sha }}
+      head-sha: ${{ github.event.pull_request.head.sha }}
+      paperclip-app-slug: flama-delivery-maxbec
+      platform-sha: 80e829ad0ccddf87898988711ff92cd810b62c13
+      profile: fast
