@@ -8,10 +8,10 @@ jobs:
             - name: ⤵️ Check out code from GitHub
               uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
             - name: 🚀 Run Home Assistant Add-on Lint
-              uses: frenck/action-addon-linter@ca747f8ea5ea80169eb39c62b10b0d6a517690c4 # v2.2
+              uses: frenck/action-addon-linter@f995494fd84fae6310d23617e66d0e37de4f14eb # v2.21.0
               with:
                   path: "./diyhue"
             - name: 🚀 Run Home Assistant Add-on Lint for BETA
-              uses: frenck/action-addon-linter@ca747f8ea5ea80169eb39c62b10b0d6a517690c4 # v2.2
+              uses: frenck/action-addon-linter@f995494fd84fae6310d23617e66d0e37de4f14eb # v2.21.0
               with:
                   path: "./diyhue-beta"
