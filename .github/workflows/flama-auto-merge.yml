@@ -6,11 +6,12 @@ on:
     branches: [main]
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
 
 jobs:
   auto-merge:
-    uses: maxbec/flama-delivery-platform/.github/workflows/reusable-auto-merge.yml@592a44ef454dcc2d5446dd937db6c0f6b24089ec
+    uses: maxbec/flama-delivery-platform/.github/workflows/reusable-auto-merge.yml@a3aae0cde3aabefea29c7cf3576cf2331d487e1b
     with:
       profile: fast
       release-branch: main
