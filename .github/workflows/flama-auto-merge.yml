@@ -11,7 +11,15 @@ permissions:
 
 jobs:
   auto-merge:
-    uses: maxbec/flama-delivery-platform/.github/workflows/reusable-auto-merge.yml@a3aae0cde3aabefea29c7cf3576cf2331d487e1b
+    uses: maxbec/flama-delivery-platform/.github/workflows/reusable-auto-merge.yml@3915526f99c19231cbb08a43ce54e4a9f8f3a012
     with:
       profile: fast
       release-branch: main
+    # Exactly the optional App credential pair is forwarded, by name. The App
+    # identity makes the eventual merge push start push workflows, which the
+    # default token's github-actions[bot] merge never does. Where the secrets
+    # do not exist the values arrive empty and the platform workflow falls
+    # back to the default token. Blanket inheritance stays forbidden.
+    secrets:
+      WORKFLOW_APP_ID: ${{ secrets.WORKFLOW_APP_ID }}
+      WORKFLOW_APP_PRIVATE_KEY: ${{ secrets.WORKFLOW_APP_PRIVATE_KEY }}
