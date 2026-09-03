@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   policy:
-    uses: maxbec/flama-delivery-platform/.github/workflows/reusable-policy.yml@a34f976e94c462dcbde5dc6c75c913b324643ef8
+    uses: maxbec/flama-delivery-platform/.github/workflows/reusable-policy.yml@34337804b379ae4342efc6e38890dad8268eaa73
     with:
       base-sha: ${{ github.event.pull_request.base.sha }}
       head-sha: ${{ github.event.pull_request.head.sha }}
