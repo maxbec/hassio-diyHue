@@ -1,0 +1,7 @@
+---
+version: "3"
+deploy:
+  provider: none
+runner:
+  labels:
+    - ubuntu-latest
