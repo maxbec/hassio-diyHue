@@ -1,0 +1,51 @@
+---
+# The one caller every repository carries as .github/workflows/ci.yaml.
+# provisioning/migrate-repos.ts (maxbec/flaiky) renders it: 19dd38ce45f0c5c0e80d3dd552e8a5ac56ef50dd and
+# v5.0.1 become the pinned commit and its tag. Nothing else is
+# per-repository — behaviour lives in .github/pipeline.yaml.
+#
+# The job id `pipeline` is load-bearing: the check-run contexts are
+# `pipeline / Guard`, `pipeline / Check` and `pipeline / Deploy`, and
+# `pipeline / Check` is the single required status check everywhere.
+name: Pipeline
+
+on:
+  pull_request:
+    branches: [dev, main]
+  push:
+    branches: [dev, main]
+  release:
+    types: [published]
+
+concurrency:
+  group: pipeline-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  pipeline:
+    # v5.0.1
+    uses: maxbec/pipeline/.github/workflows/universal-pipeline.yaml@19dd38ce45f0c5c0e80d3dd552e8a5ac56ef50dd
+    permissions:
+      contents: read
+      pull-requests: read
+      checks: write
+      deployments: write
+      packages: write
+      id-token: write
+    with:
+      config-file: .github/pipeline.yaml
+    # Org secrets do not cross the owner boundary via `secrets: inherit`
+    # (the pipeline lives under maxbec) — forward them explicitly. Missing ones
+    # are empty, which every consumer treats as "not configured".
+    secrets:
+      CF_ACCESS_CLIENT_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
+      CF_ACCESS_CLIENT_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
+      INFISICAL_CLIENT_ID: ${{ secrets.INFISICAL_CLIENT_ID }}
+      INFISICAL_CLIENT_SECRET: ${{ secrets.INFISICAL_CLIENT_SECRET }}
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
