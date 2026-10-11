@@ -1,7 +1,7 @@
 ---
 # The one caller every repository carries as .github/workflows/ci.yaml.
-# provisioning/migrate-repos.ts (maxbec/flaiky) renders it: 074377b4bb0957f8c7d917e8b25289d86fc9335e and
-# v5.2.1 become the pinned commit and its tag. Nothing else is
+# provisioning/migrate-repos.ts (maxbec/flaiky) renders it: 52d1c88d474db8d8639aede9e1dd7eb1217d047b and
+# v5.2.2 become the pinned commit and its tag. Nothing else is
 # per-repository — behaviour lives in .github/pipeline.yaml.
 #
 # The job id `pipeline` is load-bearing: the check-run contexts are
@@ -23,8 +23,8 @@ concurrency:
 
 jobs:
   pipeline:
-    # v5.2.1
-    uses: maxbec/pipeline/.github/workflows/universal-pipeline.yaml@074377b4bb0957f8c7d917e8b25289d86fc9335e
+    # v5.2.2
+    uses: maxbec/pipeline/.github/workflows/universal-pipeline.yaml@52d1c88d474db8d8639aede9e1dd7eb1217d047b
     permissions:
       contents: read
       pull-requests: read
