@@ -24,7 +24,7 @@ concurrency:
 jobs:
   pipeline:
     # v5.2.2
-    uses: maxbec/pipeline/.github/workflows/universal-pipeline.yaml@52d1c88d474db8d8639aede9e1dd7eb1217d047b
+    uses: maxbec/pipeline/.github/workflows/universal-pipeline.yaml@b9fdea4d325b588a44fdace8747fd0146ec6fe76
     permissions:
       contents: read
       pull-requests: read
