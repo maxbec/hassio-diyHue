@@ -17,6 +17,7 @@ CI is `maxbec/pipeline`, called SHA-pinned from `.github/workflows/ci.yaml`. Fla
   changelog by hand; Flaiky keeps one Release PR per branch and merging it is the release.
 - A pull request merges only when `pipeline / Check` is green, the head is signed and every review thread is resolved.
   Fix a red pipeline at the root; never weaken or skip a check.
+- Never print or commit a secret value. Secrets come from Infisical; CI reads `preview`, never `production`.
 
 <!-- pipeline:end -->
 <!-- prettier-ignore-end -->
