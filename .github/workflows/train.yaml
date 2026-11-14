@@ -1,0 +1,38 @@
+---
+# The second caller every repository carries, as .github/workflows/train.yaml.
+# The renderer fills in 5e6df20e0d0466a1acd91b5516f6611cf5de040c and v5.5.0 — the same
+# commit and tag as the Pipeline caller — and removes the schedule block
+# between the two markers where a central sweep covers the repository.
+#
+# Deleting this file, or setting the variable TRAIN to `off`, stops the train.
+name: Train
+
+# No pull_request, pull_request_review or pull_request_target trigger, ever:
+# those run the pull request's own copy of this file with the secrets below.
+# A finished Pipeline run, a dispatch and a schedule all run the default
+# branch's copy, so a pull request cannot change the train that judges it.
+on:
+  workflow_run:
+    workflows: [Pipeline]
+    types: [completed]
+  # After resolving review threads or removing `hold` without a push:
+  #   gh workflow run train.yaml
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  train:
+    # The kill switch. A job-level condition, so a stopped train starts no runner.
+    if: vars.TRAIN != 'off'
+    # v5.5.0
+    uses: maxbec/pipeline/.github/workflows/train.yaml@5e6df20e0d0466a1acd91b5516f6611cf5de040c
+    permissions:
+      contents: read
+    # By name: `secrets: inherit` drops organization secrets when the called
+    # workflow belongs to another owner. A missing one is empty, and the train
+    # then skips itself.
+    secrets:
+      TRAIN_APP_ID: ${{ secrets.TRAIN_APP_ID }}
+      TRAIN_APP_PRIVATE_KEY: ${{ secrets.TRAIN_APP_PRIVATE_KEY }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
