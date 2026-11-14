@@ -1,6 +1,6 @@
 ---
 # The second caller every repository carries, as .github/workflows/train.yaml.
-# The renderer fills in 5e6df20e0d0466a1acd91b5516f6611cf5de040c and v5.5.0 — the same
+# The renderer fills in 64f3baec98dce8fca6cd6b19c5fb21d0aa197b7e and v5.5.2 — the same
 # commit and tag as the Pipeline caller — and removes the schedule block
 # between the two markers where a central sweep covers the repository.
 #
@@ -17,7 +17,7 @@ on:
     types: [completed]
   # After resolving review threads or removing `hold` without a push:
   #   gh workflow run train.yaml
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 permissions: {}
 
@@ -25,8 +25,8 @@ jobs:
   train:
     # The kill switch. A job-level condition, so a stopped train starts no runner.
     if: vars.TRAIN != 'off'
-    # v5.5.0
-    uses: maxbec/pipeline/.github/workflows/train.yaml@5e6df20e0d0466a1acd91b5516f6611cf5de040c
+    # v5.5.2
+    uses: maxbec/pipeline/.github/workflows/train.yaml@64f3baec98dce8fca6cd6b19c5fb21d0aa197b7e
     permissions:
       contents: read
     # By name: `secrets: inherit` drops organization secrets when the called
