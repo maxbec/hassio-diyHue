@@ -1,7 +1,7 @@
 ---
 # The one caller every repository carries as .github/workflows/ci.yaml.
-# train/bin/migrate-repos.ts (maxbec/pipeline) renders it: 9eebcfe57750265b6c1f1591c5215e8556af6dd1 and
-# v5.7.3 become the pinned commit and its tag, and the schedule
+# train/bin/migrate-repos.ts (maxbec/pipeline) renders it: 8e9b17aa041f1a43a2974d333111db0166b2310d and
+# v5.8.0 become the pinned commit and its tag, and the schedule
 # block between the two markers stays only where .github/pipeline.yaml sets
 # `test.pr_command`. Nothing else is per-repository — behaviour lives in
 # .github/pipeline.yaml.
@@ -34,8 +34,8 @@ concurrency:
 
 jobs:
   pipeline:
-    # v5.7.3
-    uses: maxbec/pipeline/.github/workflows/universal-pipeline.yaml@9eebcfe57750265b6c1f1591c5215e8556af6dd1
+    # v5.8.0
+    uses: maxbec/pipeline/.github/workflows/universal-pipeline.yaml@8e9b17aa041f1a43a2974d333111db0166b2310d
     permissions:
       contents: read
       pull-requests: read
